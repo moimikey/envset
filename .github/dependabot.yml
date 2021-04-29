@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: update-notifier
+    versions:
+    - 5.0.1
+  - dependency-name: grunt-contrib-nodeunit
+    versions:
+    - 2.1.0
